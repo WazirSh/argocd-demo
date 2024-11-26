@@ -16,7 +16,7 @@ spec:
             - -c
             - |
               echo "PreSync job is running";
-              sleep 10;  
+              sleep 3;  
               
       restartPolicy: Never
   backoffLimit: 2
