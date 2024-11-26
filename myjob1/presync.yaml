@@ -1,0 +1,21 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  generateName: presync-job
+  annotations:
+    argocd.argoproj.io/hook: PreSync
+spec:
+  template:
+    spec:
+      containers:
+        - name: presync-job
+          image: ubuntu
+          command: 
+            - /bin/bash
+            - -c
+            - |
+              echo "Integration testing Done";
+              sleep 60;  
+              
+      restartPolicy: Never
+  backoffLimit: 2
