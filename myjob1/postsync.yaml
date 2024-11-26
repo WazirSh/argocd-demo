@@ -16,7 +16,7 @@ spec:
             - -c
             - |
               echo "PostSync job is running";
-              sleep 10;  
+              sleep 5;  
               
       restartPolicy: Never
   backoffLimit: 2
