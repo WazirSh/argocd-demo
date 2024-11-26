@@ -6,7 +6,7 @@ metadata:
   annotations:
     argocd.argoproj.io/hook-delete-policy: HookSucceeded
 spec:
-  suspend: true
+  suspend: false
   template:
     spec:
       containers:
