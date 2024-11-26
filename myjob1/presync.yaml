@@ -14,8 +14,8 @@ spec:
             - /bin/sh
             - -c
             - |
-              echo "Integration testing Done";
-              sleep 60;  
+              echo "PreSync job is running";
+              sleep 30;  
               
       restartPolicy: Never
   backoffLimit: 2
