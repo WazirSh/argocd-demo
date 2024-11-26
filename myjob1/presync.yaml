@@ -9,9 +9,9 @@ spec:
     spec:
       containers:
         - name: presync-job
-          image: ubuntu
+          image: alpine:3.19
           command: 
-            - /bin/bash
+            - /bin/sh
             - -c
             - |
               echo "Integration testing Done";
