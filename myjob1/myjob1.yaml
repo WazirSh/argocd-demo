@@ -7,7 +7,7 @@ spec:
     spec:
       containers:
       - name: job-demo
-        image: alpine:3.14
+        image: alpine:3.19
         command: ["/bin/sh",  "-c", "i=0; while  [ $i -le 36 ]; do i=$(( i+1 )); echo $i; sleep 5; done"]
       restartPolicy: Never
   backoffLimit: 0
