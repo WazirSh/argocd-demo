@@ -7,7 +7,7 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-options: Force=true,Replace=true
 spec:
-  suspend: false
+  suspend: true
   template:
     spec:
       containers:
